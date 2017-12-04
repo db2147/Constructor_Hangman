@@ -11,8 +11,39 @@ function Word(word) {
         var start = arr.map(function (val) {
             return "* ";
         });
-     
+
+        console.log("/nWELCOME TO HANGMAN/n");
+
+        console.log(stars.join(' '));
+        console.log("/n");
     }
+
+}
+
+var myWord = new Word("computer");
+
+guess()
+
+function guess() {
+    myWord.drawBoard();
+    inquirer
+        .prompt([{
+            type: "input",
+            name: "choice",
+            message: "PLEASE GUESS A LETTER"
+        }])
+        .then(function (val) {
+            var n = val.choice;
+
+            // need to create function to check if guessed letter is correct
+            function guessLetter(guess)
+                if
+
+
+
+        });
+
+        
 }
 
 
