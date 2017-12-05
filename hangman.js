@@ -20,9 +20,9 @@ function Word(word) {
 
 }
 
-var myWord = new Word("computer");
+// var myWord = new Word("computer");
 
-guess()
+// guess()
 
 function guess() {
     myWord.drawBoard();
@@ -36,8 +36,14 @@ function guess() {
             var n = val.choice;
 
             // need to create function to check if guessed letter is correct
-            function guessLetter(guess)
-                if
+        // var guessedLetter = function(){
+        //     validate: function(value){
+        //         if(letter(value)==true)
+        //             return true;
+        //         } else {
+        //             return false;
+        //         }
+        }
 
 
 
