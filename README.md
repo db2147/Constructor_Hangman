@@ -52,3 +52,27 @@ If you have any questions about this project or the material we have covered, pl
 ## Copyright
 
 Coding Boot Camp © 2016. All Rights Reserved.
+
+HW pseudo code:
+ you have 10 guesses left 
+	_ _ _
+
+start playing the game - (var startgame)
+
+initialize a var guessesleft
+get a word from a list of words (var getWord = somehow bring in the list I made)
+save the word to an object
+print the word (underscores only)
+guess a letter
+
+
+
+process the letter -> correct
+
+new Word("abc")--should it be just open quotes, or should I specify some word?
+
+function Word(word) 
+	var allChars = word.split("")--(split splits a string into an array of smaller strings)
+	var letter = new Letter("a")
+	this.letters
+	leters.push(letter)
