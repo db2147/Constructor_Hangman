@@ -1,66 +1,17 @@
-var names = {   // borrowed idea from liri
+var Letter = require("./Letter.js");
 
-    var animalNames: { 
-        
-        'bird' 
-        'fish' 
-        'monkey' 
-        'tiger' 
-        'iguana' 
-        'lion' 
-        'chimp' 
-        'badger' 
-        'penguin' 
-        'owl' 
-        'bear' 
-        'bulldog' 
-        'rhinoceros' 
-        'spider' 
-        'antelope' 
-        'butterfly'
-        'catfish' 
-        'cheetah' 
-        'dolphin'
-        'duck' 
-        'coyote' 
-        'squirrel' 
-        'gorilla' 
-        'leopard' 
-        'lobstercatfish' 
-        'cheetah' 
-        'dolphin'
-        'duck' 
-        'coyote' 
-        'squirrel' 
-        'gorilla' 
-        'leopard' 
-        'lobstercatfish' 
-        'cheetah' 
-        'dolphin'
-        'duck' 
-        'coyote' 
-        'squirrel' 
-        'gorilla' 
-        'leopard' 
-        'lobstercatfish' 
-        'cheetah' 
-        'dolphin'
-        'duck' 
-        'coyote' 
-        'squirrel' 
-        'gorilla' 
-        'leopard' 
-        'lobstercatfish' 
-        'cheetah' 
-        'dolphin'
-        'duck' 
-        'coyote' 
-        'squirrel' 
-        'gorilla' 
-        'leopard' 
-        'lobster'
 
+function Word(word) {
+    this.word = word;
+    this.wordArray = this.word.split('');
+    this.wordLength = this.word.length;
+    this.wordState = function () {
+        var arr = this.wordArray;
+        var letterArr = arr.map(function (val) {
+            return new Letter(val);
+        });
+        return letterArr;
     }
 }
 
-module.exports.names
+module.exports = Word;
