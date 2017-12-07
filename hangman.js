@@ -2,13 +2,42 @@ var inquirer = require('inquirer');
 
 var names = require("./word.js") // created a variable requiring my animal names from word.js
 
+var game = {
+    g: this,
+    wordlist: ["computer", "braveheart", "skywalker", "seinfeld", "jim"],
+    guesselLeft: 10,
+    lettersGuessed: '',
+    won: false,
+    loss: false,
+    gameover: false,
+    word: function () {
+        return new Word(this.wordList[1])
+    },
+    renderBoard: function () {
+        var w = this.word().wordState();
+        var r = w.map(function (val) {
+            return val.displayState();
+        });
+        return r;
 
-var guessedLetters = [];  //array will hold what we guess
-var guessesLeft = 9; // this is what well use to count down
 
-var numWins = 0;  // counter for the wins/losses
-var numLosses = 0;
-var animalLetters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+    },
+    startGame: function () {
+        console.log(this.renderBoard());
+        makeGuess(this);
+    },
+        return new Word().wordState();
+        var r = w.map(function (val) {
+            return val.displayState();
+        });
+        return r;
+
+    },
+
+
+
+
+}
 
 
 //constructor functions
