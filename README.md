@@ -1,7 +1,7 @@
 # Constructor_Hangman
 <!--  -->
 In this project I'm using Node.js to create a hangman command line game using constructor functions.&nbsp; The game receives user input using the *inquirer npm package* which is a dependency included in the package.json file.&nbsp; I created two **Constructor Functions**, one for Word and one for Letter.
-<img src="images/question.jpg" alt="Drawing" style="width: 320px; float: right;" />
+<img src="images/question.jpg" alt="Drawing" style="width: 320px; float: left;" />
 <br>
 <br>
 <br>
